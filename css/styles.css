@@ -1,0 +1,59 @@
+/* Common shared font */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Immadiate ul gula flex korar jonno */
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+
+/* Dotted list to none */
+nav li {
+  list-style: none;
+  margin-right: 50px;
+}
+
+/* nav > a = underline bad dewar jonno */
+nav a {
+  text-decoration: none;
+  color: var(--dark-02, #474747);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Mary style */
+.nav-title {
+  color: var(--dark-01, #181818);
+  /* font-family: Open Sans; */
+  font-size: 45px;
+  /* font-style: normal; */
+  font-weight: 800;
+  /* line-height: normal; */
+}
+
+/* Text color Primary- Orange */
+.text-primary {
+  color: #fd6e0a;
+}
+
+/*  */
+.button-primary {
+  border-radius: 5px;
+  background: #fd6e0a;
+
+  border: 0;
+  padding: 15px 35px;
+
+  color: var(--white-color, #fff);
+  font-size: 20px;
+  font-weight: 700;
+}
