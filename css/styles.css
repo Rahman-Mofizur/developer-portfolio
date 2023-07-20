@@ -82,6 +82,7 @@ header {
   align-items: center;
 
   justify-content: space-between; /* space between creates spaces between contents so that they move left and righ gapping in the middle */
+  margin-bottom: 0px;
 }
 
 .banner-content {
@@ -129,11 +130,21 @@ header {
 
 /* main section styles */
 
+main {
+  max-width: 1140px;
+  /* margin: 0px 230px; auto means they wil resonsive: The contents will share the margin between them. */
+  margin: 0px auto;
+}
+
 /* about section */
 .about {
   /* max-width: 1140px; */
   padding: 130px;
-  margin-top: 30px 0px;
+
+  border-radius: 10px;
+  background: #fff8f3;
+
+  margin: 130px 0px;
 }
 
 .section-title {
@@ -149,4 +160,22 @@ header {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px; /* 166.667% */
+}
+
+.about-info-container {
+  display: flex;
+  justify-content: space-around; /*  It is used in a container to put things organized so that they may take same amound of gap between them. It is used when I have more than 2 items to organoze. Otherwise we use space between, whenever I have only 2 items in my container.  */
+}
+
+.about-info {
+  /* justify-content: space-around; */
+  text-align: center;
+}
+
+.info-title {
+  margin-bottom: 0;
+}
+
+.info-description {
+  margin-top: 2;
 }
