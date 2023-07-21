@@ -34,7 +34,7 @@ nav a {
   text-decoration: none;
   color: var(--dark-02, #474747);
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 
 /* Mary style */
@@ -43,7 +43,7 @@ nav a {
   /* font-family: Open Sans; */
   font-size: 45px;
   /* font-style: normal; */
-  font-weight: 800;
+  /* font-weight: 800; */
   /* line-height: normal; */
 }
 
@@ -62,16 +62,18 @@ nav a {
 
   color: var(--white-color, #fff);
   font-size: 20px;
-  font-weight: 700;
 }
 
 /* Header related styles */
 /* Jhankar used header class */
 header {
   background: #fff8f3;
-  background-image: url(../images/header_bg.png);
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
+
+  /* posiotion of 2 Background images are added by a comma. */
+  background-position: bottom right, bottom left;
 }
 
 /* Banner section syles starts here */
@@ -288,3 +290,7 @@ textarea {
   display: flex;
   justify-content: center;
 } */
+
+.fa-solid fa-phone {
+  margin-right: 5px;
+}
